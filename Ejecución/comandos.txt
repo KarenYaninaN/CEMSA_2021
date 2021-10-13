@@ -1,0 +1,16 @@
+Para instalar:
+-npm install express mysql express-myconnection morgan ejs nodemon -D
+
+Para ejecutar:
+-npm run dev
+
+Para la base de dato:
+-usuario: root
+-contraseña: 123456
+
+Links:
+-https://www.youtube.com/watch?v=VxRXlUrV6y0&t=516s   
+En los primeros 10 minutos explica la instalacion y para que es cada componente
+
+-https://www.youtube.com/watch?v=j9MqyiStP9I
+Para instalar mysql

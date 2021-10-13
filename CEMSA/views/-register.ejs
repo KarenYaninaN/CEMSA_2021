@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.standalone.min.css">
+    <link rel="stylesheet" href="/now-ui-kit.css" type="text/css">
+    <link rel="stylesheet" href="css/nucleo-icons.css" type="text/css">
+    <script src="js/navbar-ontop.js"></script>
+    <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
+    <title>Now UI Kit by Creative Tim</title>
+    <meta name="description" content="Start your development with a beautiful Bootstrap 4 UI kit. It is yours Free.">
+    <meta name="keywords" content="bootstrap 4, bootstrap 4 uit kit, bootstrap 4 kit, now ui, now ui kit, creative tim, html kit, html css template, web template, bootstrap, bootstrap 4, css3 template, frontend, responsive bootstrap template, bootstrap ui kit, responsive ui kit">
+  
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="estilos2.css">
+  </head>
+  <body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 shadow-lg p-3 mb-5">
+
+          <div class="card border-primary">
+            <div class="card-header bg-primary text-white">Registrarse</div>
+            <div class="card-body text-primary">
+              <form action="/register" method="POST">  
+                <div class="mb-3">
+                  <label for="id" class="form-label">ID USUARIO</label>
+                  <input id="id" name="id" type="text" class="form-control" aria-describedby="emailHelp">              
+              </div> 
+                <div class="mb-3">
+                  <label for="usr_tip" class="form-label">Tipo de Documento - Despues un Combo</label>
+                  <input id="usr_tip" name="usr_tip" type="text" class="form-control" aria-describedby="emailHelp">              
+              </div>
+              <div class="mb-3">
+                <label for="usr_Doc" class="form-label">Nro de Documento</label>
+                <input id="usr_Doc" name="usr_Doc" type="text" class="form-control" aria-describedby="emailHelp">              
+            </div>
+
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre completo</label>
+                    <input id="name" name="name" type="text" class="form-control" aria-describedby="emailHelp">              
+                </div>
+                <div class="mb-3">
+                  <label for="apellido" class="form-label">Nombre completo</label>
+                  <input id="apellido" name="apellido" type="text" class="form-control" aria-describedby="emailHelp">              
+              </div>
+
+                <div class="mb-3">
+                    <label for="user" class="form-label">Cuenta de usuario</label>
+                    <input id="user" name="user" type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="pass" class="form-label">Password</label>
+                    <input id="pass" name="pass" type="password" class="form-control">
+                </div>                            
+            </div>
+            <div class="card-footer bg-transparent border-primary">
+              <button type="submit" class="btn btn-primary">Registrar</button>
+              <a href="/menu" type="button" class="btn btn-secondary">Cancelar</a>
+              
+            </div>
+            </form>
+          </div>   
+    
+        </div>
+    </div>
+</div>
+
+ 
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

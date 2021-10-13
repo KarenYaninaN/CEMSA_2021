@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.standalone.min.css">
+  <link rel="stylesheet" href="now-ui-kit.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/nucleo-icons.css" type="text/css">
+  <script src="assets/js/navbar-ontop.js"></script>
+  <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
+  <title>Iniciar Sesión</title>
+  <meta name="description" content="Start your development with a beautiful Bootstrap 4 UI kit. It is yours Free.">
+  <meta name="keywords" content="bootstrap 4, bootstrap 4 uit kit, bootstrap 4 kit, now ui, now ui kit, creative tim, html kit, html css template, web template, bootstrap, bootstrap 4, css3 template, frontend, responsive bootstrap template, bootstrap ui kit, responsive ui kit">
+</head>
+
+<body class="">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark pb-0 pt-0" style="background-color: #e3f2fd;">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../../assets/img/LOGO CEMSA V2.0.png" width="" class="d-inline-block align-top" alt="" height="40"> </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar11" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar11">
+      </div>
+    </div>
+  </nav>
+  <div class="section-overlapping">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 mx-auto px-0">
+          <img src="assets/img/device_2.png" alt="" class="img-fluid d-block d-md-none"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-0">
+    <div class="container">
+      <div class="row">
+        <div class="mx-auto col-xl-8 col-md-10">
+          <h2 class="my-3 text-center">
+            <b>Bienvenido</b></h2>
+          <p class="lead text-center">Para acceder a todos los servicios que CeMSA ofrece ingresa a tu cuenta con tus credenciales.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-dark py-0" style="	background-image: url(../../assets/img/bg11.jpg);	background-size: cover;	background-position: center top;	background-repeat: repeat;">
+    <div class="container">
+      <div class="row">
+        <div class="mx-auto col-md-6 col-10 col-xl-4 px-4">
+          <div class="card bg-primary">
+            <div class="card-body text-center bg-dark">
+              <div class="row mt-5">
+                <div class="col-md-12">
+                  <h5 class="mb-1" contenteditable="true">
+                    <b>INICIAR SESIÓN</b></h5>
+                  <button class="btn btn-icon rounded btn-light mx-1 btn-facebook shadow" type="button">
+                    <i class="fa fa-fw fa-lg fa-facebook-square"></i>
+                  </button>
+                  <button class="btn btn-icon rounded btn-lg btn-light mx-1 btn-twitter shadow" type="button">
+                    <i class="fa fa-fw fa-2x fa-twitter"></i>
+                  </button>
+                  <button class="btn btn-icon rounded btn-light mx-1 btn-google shadow" type="button">
+                    <i class="fa fa-fw fa-google-plus fa-lg"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="row pt-2 mt-2">
+                <div class="col">
+             
+                 <main class="form-signin text-center shadow-lg p-3 mb-5">
+
+                    <form id="formLogin" action="/login" method="POST">
+   
+                      <div class="input-group border-0">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text bg-success" id="basic-addon1">
+                            <i class="now-ui-icons users_circle-08 lg mr-2" ></i>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control" id="user" name="user" placeholder="User">
+                       </div>
+                      <br>
+
+                      <div class="form-group mb-3">
+                        <div class="input-group border-0">
+                          <div class="input-group-prepend ">
+                            <span class="input-group-text bg-success w-100 mr-2 pr-2" id="basic-addon1">
+                              <i class="fa fa-eye lg mr-2" contenteditable="true"></i>
+                            </span>
+                          </div>
+                          <input type="password" class="form-control" id="pass" name="pass" placeholder="Password">
+                         </div>
+                      </div>
+
+                      <button class="w-100 btn btn-lg btn-primary" type="submit">Ingresar</button>  
+                    </form>
+                  
+                    <br>
+                    
+                </main>
+                  
+                  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                    <% if(alert) { %>
+                      <script>
+                        Swal.fire({
+                          title: '<%= alertTitle %>',
+                          text:'<%= alertMessage %>',
+                          icon:'<%= alertIcon %>',
+                          showConfirmButton: <%= showConfirmButton %>,
+                          timer: <%= timer %>
+                        }).then(()=>{
+                          window.location = '/<%= ruta %>'
+                        })
+                      </script>
+                    <% } %>
+
+
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col mt-2 mb-5">
+          <a class="btn rounded btn-lg btn-outline-secondary" href="#">Olvidé mis credenciales.&nbsp;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-white py-2" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(https://static.pingendo.com/cover-bubble-dark.svg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center align-self-center p-4">
+          <p class="mb-3" contenteditable="true"> <strong>CEMSA.</strong> <br>Códoba Capital, CP 5000<br>Argentina&nbsp;<br>Contacto:&nbsp; (351) 2109898<br></p>
+          <div class="row">
+            <div class="col-md-12 d-flex align-items-center justify-content-around"> <a href="#">
+                <i class="d-block fa fa-facebook-official text-light fa-lg mx-2"></i>
+              </a> <a href="#">
+                <i class="d-block fa fa-instagram text-light fa-lg mx-2"></i>
+              </a> <a href="#">
+                <i class="d-block fa text-light ml-2 fa-twitterfa fa-envelope-o"></i>
+              </a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"></script>
+  <script src="assets/js/parallax.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js"></script>
+  <script >
+    $(document).ready(function() {
+      $('[data-toggle="popover"]').popover();
+      $('[data-toggle="tooltip"]').tooltip();
+      $('#datepicker-example').datepicker({
+        calendarWeeks: true,
+        autoclose: true,
+        todayHighlight: true
+      });
+    });
+  </script>
+  
+</body>
+
+</html>
